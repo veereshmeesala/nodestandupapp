@@ -1,16 +1,13 @@
-var mongoose = require('mongoose');
+var mongoose = require( 'mongoose' );
 var Schema = mongoose.Schema;
 
 var standupSchema = new Schema({
-	memberName: String,
-	project: String,
-	workYesterday: String,
-	workToday: String,
-	impediment: String,
-	createdOn: { type: Date, default: Date.now }
+    memberName: String,
+    project: String,
+    workYesterday: String,
+    workToday: String,
+    impediment: String,
+    createdOn: { type: Date, default: Date.now }
 });
 
-
-// Export Model 
-module.exports = mongoose.model('Standup', standupSchema);
-
+module.exports = mongoose.model( 'Standup', standupSchema );
